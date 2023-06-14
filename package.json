@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "test:api": "npx nx test surveybear-api",
+    "test:spa": "npx nx test surveybear-survey-spa"
   },
   "private": true,
   "dependencies": {
