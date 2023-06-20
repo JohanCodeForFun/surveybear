@@ -2,5 +2,5 @@ import { ISurvey } from "@surveybear/surveybear-lib";
 
 export const getSurveyById = async ( surveyId: string): Promise<ISurvey> => {
     console.log(surveyId);
-    return (await fetch(`http://localhost:4200/api/survey/${surveyId}`)).json();
+    return (await fetch(`${process.env?.['NX_REQ_URL']}/api/survey/${surveyId}`)).json();
 }
