@@ -4,6 +4,10 @@ import { body, param, validationResult } from 'express-validator';
 
 const router = Router();
 
+router.get('/healthcheck', (req, res) => {
+    res.status(200).send();
+    console.log("Healthcheck done");
+});
 router.get(
     '/survey/all',
     async (req, res, next) => {
