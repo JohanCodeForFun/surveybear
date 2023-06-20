@@ -1,5 +1,5 @@
-
 import styled from 'styled-components';
+import ThankYouPage from './pages/ThankYouPage';
 import SurveyPage from './pages/SurveyPage';
 import StartPage from './pages/StartPage';
 
@@ -22,6 +22,10 @@ export function App() {
         <Route
           path="/survey/:surveyId"
           element={<SurveyPage />}
+        />
+        <Route
+          path="/thank-you/"
+          element={<ThankYouPage />}
         />
         {process.env['NX_STARTPAGE_ENABLED'] === 'true' &&
           <Route
