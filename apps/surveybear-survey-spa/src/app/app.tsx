@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import ThankYouPage from './pages/ThankYouPage';
 import SurveyPage from './pages/SurveyPage';
 import StartPage from './pages/StartPage';
+import StartPage2 from './pages/StartPage2';
 
 
 import { Route, Routes } from 'react-router-dom';
@@ -55,7 +56,7 @@ export function App() {
             <p>Vad tycker om våra tjänster på SurveyBear?</p>
             <StarRating/>
           </>} 
-        />
+        />}
       </Routes>
     </StyledApp>
   );
