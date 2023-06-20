@@ -38,7 +38,7 @@ export function App() {
           path="/"
           element={
           <>
-            <h1>Du är på första sidan!</h1>
+            <h1>Du är på förstasidan!</h1>
             <p>Vad tycker om våra tjänster på SurveyBear?</p>
             <StarRating/>
           </>} 
