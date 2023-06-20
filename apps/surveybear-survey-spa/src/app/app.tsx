@@ -5,13 +5,27 @@ import StartPage from './pages/StartPage';
 
 
 import { Route, Routes } from 'react-router-dom';
-
+import { render } from 'react-dom'
+import ReactStars from 'react-stars'
 
 
 const StyledApp = styled.div`
     // Your style here
 `;
 
+function StarRating() {
+  const ratingChanged = (newRating: number) => {
+    console.log(newRating)
+  }
+   
+  return (
+    <ReactStars
+    count={5}
+    onChange={ratingChanged}
+    size={24}
+    color2={'#ffd700'} />
+  );
+}
 
 export function App() {
 
@@ -30,8 +44,13 @@ export function App() {
         {process.env['NX_STARTPAGE_ENABLED'] === 'true' &&
           <Route
           path="/"
-          element={<StartPage/>} />
-        }
+          element={
+          <>
+            <h1>Du är på förstasidan!</h1>
+            <p>Vad tycker om våra tjänster på SurveyBear?</p>
+            <StarRating/>
+          </>} 
+        />
       </Routes>
     </StyledApp>
   );
