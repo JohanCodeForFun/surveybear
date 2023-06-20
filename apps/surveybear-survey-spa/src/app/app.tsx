@@ -20,6 +20,11 @@ export function App() {
           path="/survey/:surveyId"
           element={<SurveyPage />}
         />
+        {process.env['NX_STARTPAGE_2'] === 'true' &&
+          <Route
+          path="/"
+          element={<StartPage2/>} />
+        }
         <Route
           path="/"
           element={<div>Du är på förstasidan</div>} 
