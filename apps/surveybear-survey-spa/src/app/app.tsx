@@ -55,12 +55,11 @@ export function App() {
             <h1>Du är på förstasidan!</h1>
             <p>Vad tycker om våra tjänster på SurveyBear?</p>
             <StarRating/>
-          </>} 
+          </>}
         />}
       </Routes>
     </StyledApp>
   );
-
 }
 
 
