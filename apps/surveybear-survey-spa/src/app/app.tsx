@@ -38,11 +38,11 @@ export function App() {
           path="/survey/:surveyId"
           element={<SurveyPage />}
         />
-        {process.env['NX_STARTPAGE_2'] === 'true' &&
+        {/* {process.env['NX_STARTPAGE_2'] === 'true' &&
           <Route
           path="/"
           element={<StartPage2/>} />
-        }
+        } */}
         <Route
           path="/thank-you/"
           element={<ThankYouPage />}
